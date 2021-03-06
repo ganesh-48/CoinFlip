@@ -47,7 +47,8 @@ done
 if [ $Head -eq $Tail ]
 then
 	echo " It's Tie "
-
+	Tie=$(( $Head - $Tail ))
+	echo $Tie
 elif [ $Head -gt $Tail ]
 then
 	Head=$(( $Head - $Tail ))
